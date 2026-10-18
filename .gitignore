@@ -1,0 +1,54 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# never commit identifiable records
+real-data/
+private/
+
+# tooling
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+.next/
+.DS_Store
+
+# IHH unredacted original packets never commit
+packets-real/
+originals/
+
+# de-identified packets are hosted on Google Drive, not in git
+challenges/1-referral-intake/packets/*
+!challenges/1-referral-intake/packets/README.md
+*.zip
+**/R[0-9][0-9].pdf
+
+# BE-07: runtime and derived clinical content stays local, never in Git
+# (an ignore rule does not remove anything already committed; see docs/backend-tickets/BE-07-fixture-separation.md)
+runtime/
+results/
+suggestions/
+packets_text/
+ocr/
+renders/
+*.ocr.txt
+*.ocr.json
+*_p-[0-9]*.txt
+*.log
+*.pid
+backend/uploads/
+backend/data/
+/referral-review*/
+
+# LOOP-06: shared-record store, documents, backups and dev user files stay local
+shared-store/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+dev-users.json
+backups/
