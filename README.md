@@ -1,4 +1,16 @@
-# Careward — Team 1
+# Referral Review Assistant
+
+> For IHH referral coordinators: turns a hospital referral packet into page-linked evidence checked
+> against IHH's admission criteria, so the coordinator can answer within the two-hour target. The
+> coordinator decides; the tool never approves or denies.
+
+**[Live demo](https://vibhua-ai.github.io/referral-review-assistant/)** (synthetic referrals) ·
+**[Architecture, workflow and safety](docs/ARCHITECTURE.md)** ·
+Team repo: [phileokairos-pixel/claude-impact-lab-oc---team-1](https://github.com/phileokairos-pixel/claude-impact-lab-oc---team-1)
+
+The app inside is **Careward**, built by Team 1.
+
+## Careward — Team 1
 
 Careward helps IHH intake coordinators review referral evidence, identify unanswered questions, and record a human-confirmed next step.
 
